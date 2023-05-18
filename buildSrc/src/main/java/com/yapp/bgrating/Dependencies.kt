@@ -29,7 +29,8 @@ object KtLint {
 }
 
 object Test {
-    const val EXT_JUNIT = "junit:junit:4.13.2"
+    const val JUNIT = "junit:junit:4.13.2"
     const val TEST_RUNNER = "com.android.support.test:runner:1.0.2"
     const val ESPRESSO_CORE = "com.android.support.test.espresso:espresso-core:3.0.2"
+    const val EXT_JUNIT = "androidx.test.ext:junit:1.1.5"
 }

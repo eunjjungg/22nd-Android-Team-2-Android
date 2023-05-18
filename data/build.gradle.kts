@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.yapp.bgrating.domain"
+    namespace = "com.yapp.bgrating.data"
     compileSdk = 32
 
     defaultConfig {
@@ -20,7 +20,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro",
+                "proguard-rules.pro"
             )
         }
     }

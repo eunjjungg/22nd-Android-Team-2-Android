@@ -24,6 +24,14 @@ object AndroidX {
     const val MATERIAL = "com.google.android.material:material:1.9.0"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.1.4"
     const val APP_COMPAT = "androidx.appcompat:appcompat:1.5.1"
+    const val LIFECYCLE_VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    const val LIFECYCLE_LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    const val ACTIVITY = "androidx.activity:activity-ktx:1.3.1"
+    const val FRAGMENT = "androidx.fragment:fragment-ktx:1.3.6"
+}
+
+object Coroutines {
+    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
 }
 
 object DaggerHilt {

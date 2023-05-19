@@ -44,6 +44,8 @@ dependencies {
     implementation(com.yapp.bgrating.Test.TEST_RUNNER)
     implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
 
+    implementation(project(mapOf("path" to ":domain")))
+
     // retrofit
     implementation(com.yapp.bgrating.Retrofit.RETROFIT)
     implementation(com.yapp.bgrating.Retrofit.CONVERTER_GSON)
@@ -51,8 +53,7 @@ dependencies {
 
     // Hilt
     implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
-    implementation(project(mapOf("path" to ":domain")))
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
-    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    // implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 }

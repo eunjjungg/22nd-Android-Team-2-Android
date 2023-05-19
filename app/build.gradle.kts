@@ -55,11 +55,20 @@ dependencies {
     // Hilt
     implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
-    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    // implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
     // retrofit
     implementation(com.yapp.bgrating.Retrofit.RETROFIT)
     implementation(com.yapp.bgrating.Retrofit.CONVERTER_GSON)
     implementation(com.yapp.bgrating.Retrofit.CONVERTER_JAXB)
+
+    // AndroidX
+    implementation(com.yapp.bgrating.AndroidX.LIFECYCLE_VIEW_MODEL)
+    implementation(com.yapp.bgrating.AndroidX.LIFECYCLE_LIVEDATA)
+    implementation(com.yapp.bgrating.AndroidX.ACTIVITY)
+    implementation(com.yapp.bgrating.AndroidX.FRAGMENT)
+
+    // Coroutines
+    implementation(com.yapp.bgrating.Coroutines.COROUTINES)
 }

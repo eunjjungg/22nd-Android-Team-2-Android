@@ -1,7 +1,7 @@
 package com.yapp.bgrating.domain.repository
 
-import com.yapp.bgrating.domain.model.MockApiResponse
+import com.yapp.bgrating.domain.model.MockApiItem
 
 interface MockRepository {
-    suspend fun getKakaoMock(token: String): MockApiResponse?
+    suspend fun getKakaoMock(token: String): MockApiItem?
 }

@@ -15,10 +15,10 @@ class RepositoryModule {
     @Provides
     @Singleton
     fun provideMockRepository(
-        mockDataSourceImpl: MockDataSourceImpl
+        mockDataSourceImpl: MockDataSourceImpl,
     ): MockRepository {
         return MockRepositoryImpl(
-            mockDataSourceImpl
+            mockDataSourceImpl,
         )
     }
 }

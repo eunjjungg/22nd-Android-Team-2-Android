@@ -50,6 +50,7 @@ dependencies {
     implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
 
     implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":domain")))
 
     // Hilt
     implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)

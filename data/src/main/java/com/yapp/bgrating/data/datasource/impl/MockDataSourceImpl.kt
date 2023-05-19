@@ -8,7 +8,7 @@ import com.yapp.bgrating.domain.utils.RemoteErrorEmitter
 import javax.inject.Inject
 
 class MockDataSourceImpl @Inject constructor(
-    private val oauthApi: OAuthApi
+    private val oauthApi: OAuthApi,
 ) : BaseRepository(), MockDataSource {
     override suspend fun getKakaoMock(remoteErrorEmitter: RemoteErrorEmitter, token: String): MockApiResponse? {
         return safeApiCall(remoteErrorEmitter) {

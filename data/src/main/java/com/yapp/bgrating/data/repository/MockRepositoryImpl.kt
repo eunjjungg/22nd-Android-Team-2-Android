@@ -12,10 +12,10 @@ class MockRepositoryImpl @Inject constructor(
 ) : MockRepository {
     override suspend fun getKakaoMock(
         remoteErrorEmitter: RemoteErrorEmitter,
-        token: String
+        token: String,
     ): MockApiItem? {
         return MapperToDomain.mapperToMockApiItem(
-            mockDataSource.getKakaoMock(remoteErrorEmitter, token = token)
+            mockDataSource.getKakaoMock(remoteErrorEmitter, token = token),
         )
     }
 }

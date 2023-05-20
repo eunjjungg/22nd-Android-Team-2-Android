@@ -28,6 +28,7 @@ object AndroidX {
     const val LIFECYCLE_LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     const val ACTIVITY = "androidx.activity:activity-ktx:1.3.1"
     const val FRAGMENT = "androidx.fragment:fragment-ktx:1.3.6"
+    const val COMPOSE = "androidx.activity:activity-compose:1.5.1"
 }
 
 object Coroutines {

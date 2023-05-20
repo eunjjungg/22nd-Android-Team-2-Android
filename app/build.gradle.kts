@@ -68,6 +68,7 @@ dependencies {
     implementation(com.yapp.bgrating.AndroidX.LIFECYCLE_LIVEDATA)
     implementation(com.yapp.bgrating.AndroidX.ACTIVITY)
     implementation(com.yapp.bgrating.AndroidX.FRAGMENT)
+    implementation(com.yapp.bgrating.AndroidX.COMPOSE)
 
     // Coroutines
     implementation(com.yapp.bgrating.Coroutines.COROUTINES)

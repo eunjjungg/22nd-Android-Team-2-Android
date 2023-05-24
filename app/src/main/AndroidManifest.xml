@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.22ndTEST">
         <activity
-            android:name="com.yapp.bol.app.view.MainActivity"
+            android:name="com.yapp.bol.presentation.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.yapp.bol.app.viewmodel
+package com.yapp.bol.presentation.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

@@ -1,10 +1,10 @@
-package com.yapp.bol.app.view
+package com.yapp.bol.presentation.view
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.yapp.bol.app.R
-import com.yapp.bol.app.viewmodel.MainViewModel
+import com.yapp.bol.presentation.R
+import com.yapp.bol.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

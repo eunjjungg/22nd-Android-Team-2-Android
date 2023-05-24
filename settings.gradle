@@ -20,3 +20,4 @@ rootProject.name = "22nd-Android-Team-2-Android"
 include ':app'
 include ':domain'
 include ':data'
+include ':presentation'

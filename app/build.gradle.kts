@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.yapp.bgrating.app"
+    namespace = "com.yapp.bol.app"
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "com.yapp.bgrating.app"
+        applicationId = "com.yapp.bol.app"
         minSdk = 21
         targetSdk = 32
         versionCode = 1
@@ -41,35 +41,35 @@ android {
 }
 
 dependencies {
-    implementation(com.yapp.bgrating.KTX.CORE)
-    implementation(com.yapp.bgrating.AndroidX.APP_COMPAT)
-    implementation(com.yapp.bgrating.AndroidX.MATERIAL)
-    implementation(com.yapp.bgrating.AndroidX.CONSTRAINT_LAYOUT)
-    implementation(com.yapp.bgrating.Test.JUNIT)
-    implementation(com.yapp.bgrating.Test.TEST_RUNNER)
-    implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
+    implementation(com.yapp.bol.KTX.CORE)
+    implementation(com.yapp.bol.AndroidX.APP_COMPAT)
+    implementation(com.yapp.bol.AndroidX.MATERIAL)
+    implementation(com.yapp.bol.AndroidX.CONSTRAINT_LAYOUT)
+    implementation(com.yapp.bol.Test.JUNIT)
+    implementation(com.yapp.bol.Test.TEST_RUNNER)
+    implementation(com.yapp.bol.Test.ESPRESSO_CORE)
 
     implementation(project(mapOf("path" to ":data")))
     implementation(project(mapOf("path" to ":domain")))
 
     // Hilt
-    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
-    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
-    // implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
-    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
+    implementation(com.yapp.bol.DaggerHilt.DAGGER_HILT)
+    kapt(com.yapp.bol.DaggerHilt.DAGGER_HILT_COMPILER)
+    // implementation(com.yapp.bol.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    kapt(com.yapp.bol.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
     // retrofit
-    implementation(com.yapp.bgrating.Retrofit.RETROFIT)
-    implementation(com.yapp.bgrating.Retrofit.CONVERTER_GSON)
-    implementation(com.yapp.bgrating.Retrofit.CONVERTER_JAXB)
+    implementation(com.yapp.bol.Retrofit.RETROFIT)
+    implementation(com.yapp.bol.Retrofit.CONVERTER_GSON)
+    implementation(com.yapp.bol.Retrofit.CONVERTER_JAXB)
 
     // AndroidX
-    implementation(com.yapp.bgrating.AndroidX.LIFECYCLE_VIEW_MODEL)
-    implementation(com.yapp.bgrating.AndroidX.LIFECYCLE_LIVEDATA)
-    implementation(com.yapp.bgrating.AndroidX.ACTIVITY)
-    implementation(com.yapp.bgrating.AndroidX.FRAGMENT)
-    implementation(com.yapp.bgrating.AndroidX.COMPOSE)
+    implementation(com.yapp.bol.AndroidX.LIFECYCLE_VIEW_MODEL)
+    implementation(com.yapp.bol.AndroidX.LIFECYCLE_LIVEDATA)
+    implementation(com.yapp.bol.AndroidX.ACTIVITY)
+    implementation(com.yapp.bol.AndroidX.FRAGMENT)
+    implementation(com.yapp.bol.AndroidX.COMPOSE)
 
     // Coroutines
-    implementation(com.yapp.bgrating.Coroutines.COROUTINES)
+    implementation(com.yapp.bol.Coroutines.COROUTINES)
 }

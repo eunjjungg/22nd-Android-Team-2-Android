@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -41,4 +43,15 @@ dependencies {
     implementation(com.yapp.bgrating.Test.EXT_JUNIT)
     implementation(com.yapp.bgrating.Test.TEST_RUNNER)
     implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
+
+    // retrofit
+    implementation(com.yapp.bgrating.Retrofit.RETROFIT)
+    implementation(com.yapp.bgrating.Retrofit.CONVERTER_GSON)
+    implementation(com.yapp.bgrating.Retrofit.CONVERTER_JAXB)
+
+    // Hilt
+    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
+    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
+    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 }

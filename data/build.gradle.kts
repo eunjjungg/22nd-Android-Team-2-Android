@@ -51,6 +51,7 @@ dependencies {
 
     // Hilt
     implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
+    implementation(project(mapOf("path" to ":domain")))
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
     implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
     kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)

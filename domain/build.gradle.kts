@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.yapp.bgrating.domain"
+    namespace = "com.yapp.bol.domain"
     compileSdk = 32
 
     defaultConfig {
@@ -37,21 +37,21 @@ android {
 
 dependencies {
 
-    implementation(com.yapp.bgrating.KTX.CORE)
-    implementation(com.yapp.bgrating.AndroidX.APP_COMPAT)
-    implementation(com.yapp.bgrating.AndroidX.MATERIAL)
-    implementation(com.yapp.bgrating.Test.EXT_JUNIT)
-    implementation(com.yapp.bgrating.Test.TEST_RUNNER)
-    implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
+    implementation(com.yapp.bol.KTX.CORE)
+    implementation(com.yapp.bol.AndroidX.APP_COMPAT)
+    implementation(com.yapp.bol.AndroidX.MATERIAL)
+    implementation(com.yapp.bol.Test.EXT_JUNIT)
+    implementation(com.yapp.bol.Test.TEST_RUNNER)
+    implementation(com.yapp.bol.Test.ESPRESSO_CORE)
 
     // retrofit
-    implementation(com.yapp.bgrating.Retrofit.RETROFIT)
-    implementation(com.yapp.bgrating.Retrofit.CONVERTER_GSON)
-    implementation(com.yapp.bgrating.Retrofit.CONVERTER_JAXB)
+    implementation(com.yapp.bol.Retrofit.RETROFIT)
+    implementation(com.yapp.bol.Retrofit.CONVERTER_GSON)
+    implementation(com.yapp.bol.Retrofit.CONVERTER_JAXB)
 
     // Hilt
-    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
-    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
-    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
-    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
+    implementation(com.yapp.bol.DaggerHilt.DAGGER_HILT)
+    kapt(com.yapp.bol.DaggerHilt.DAGGER_HILT_COMPILER)
+    // implementation(com.yapp.bol.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    kapt(com.yapp.bol.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 }

@@ -44,7 +44,7 @@ dependencies {
     implementation(com.yapp.bgrating.AndroidX.APP_COMPAT)
     implementation(com.yapp.bgrating.AndroidX.MATERIAL)
     implementation(com.yapp.bgrating.AndroidX.CONSTRAINT_LAYOUT)
-    implementation(com.yapp.bgrating.Test.EXT_JUNIT)
+    implementation(com.yapp.bgrating.Test.JUNIT)
     implementation(com.yapp.bgrating.Test.TEST_RUNNER)
     implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
 //    implementation 'androidx.core:core-ktx:1.8.0'

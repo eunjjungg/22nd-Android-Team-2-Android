@@ -1,7 +1,8 @@
-package com.yapp.bgrating.app
+package com.yapp.bgrating.app.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.yapp.bgrating.app.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

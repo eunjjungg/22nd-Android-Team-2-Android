@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -23,7 +24,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
         debug {
@@ -47,11 +48,10 @@ dependencies {
     implementation(com.yapp.bgrating.Test.JUNIT)
     implementation(com.yapp.bgrating.Test.TEST_RUNNER)
     implementation(com.yapp.bgrating.Test.ESPRESSO_CORE)
-//    implementation 'androidx.core:core-ktx:1.8.0'
-//    implementation 'androidx.appcompat:appcompat:1.5.1'
-//    implementation 'com.google.android.material:material:1.9.0'
-//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    testImplementation 'junit:junit:4.13.2'
-//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Hilt
+    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT)
+    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_COMPILER)
+    implementation(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_VIEW_MODEL)
+    kapt(com.yapp.bgrating.DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 }
